@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('./assets/fonts/minecraftia.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Minecraftia', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    height: 100vh;
+    background-image: url(./assets/images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.formSection {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 1000px; 
+    height: auto;
+}
+
+.form-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-end; 
+}
+
+.form-labels > div {
+    flex: 0 1 calc(50% - 7.5px);
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+input {
+    width: 100%;
+    max-width: 280px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.create-account {
+    margin-top: 20px;
+    margin-right: 200px;
+}
+
+/* Minecraft Style Button */
+.create-account button {
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    image-rendering: pixelated;
+    border: 2px solid #000;
+    background-color: #333;
+    color: #DDD;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Minecraftia', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.create-account button:hover {
+    background-color: rgba(100, 100, 255, 0.45);
+    text-shadow: 2px 2px #202013CC;
+    color: #FFFFA0;
+}
+.create-account button:active {
+    box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+}
